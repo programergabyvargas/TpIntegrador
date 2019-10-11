@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+<!--
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/foto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" /> -->
+
+
+    <TextView
+        android:id="@+id/tvDni"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="#FF2CEEDD"
+        android:text="DNI"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNroDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDni"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvApe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2CEEDD"
+        android:text="APELLIDO"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNroDni"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perez"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvApe"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2CEEDD"
+        android:text="NOMBRE"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellido"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Juan"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2CEEDD"
+        android:text="DIRECCION"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Colon 324"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDir"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF2CEEDD"
+        android:text="TELEFONO"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccion"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2664678211"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTel"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/tvDivision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefono"
+        tools:layout_editor_absoluteX="-16dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

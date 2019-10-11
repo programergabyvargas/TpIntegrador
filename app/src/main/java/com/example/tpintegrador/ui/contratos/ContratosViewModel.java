@@ -10,7 +10,7 @@ public class ContratosViewModel extends ViewModel {
 
     public ContratosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is contratos fragment");
+       // mText.setValue("This is contratos fragment");
     }
 
     public LiveData<String> getText() {

@@ -1,5 +1,7 @@
 package com.example.tpintegrador.ui.cerrar;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,13 +25,32 @@ public class CerrarFragment extends Fragment {
         cerrarViewModel =
                 ViewModelProviders.of(this).get(CerrarViewModel.class);
         View root = inflater.inflate(R.layout.fragment_cerrar, container, false);
-        final TextView textView = root.findViewById(R.id.text_cerrar);
-        cerrarViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        cerrar();
+
         return root;
+    }
+
+
+    private void cerrar(){
+        new AlertDialog.Builder(getContext())
+                .setTitle("Cerrar Aplicacion")
+                .setMessage("Esta seguro?")
+                .setPositiveButton("Si", new DialogInterface.OnClickListener(){
+
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        getActivity().finish();
+                      //  System.exit(0);
+                    }
+                })
+                 .setNegativeButton("No", new DialogInterface.OnClickListener(){
+
+                     @Override
+                     public void onClick(DialogInterface dialogInterface, int i) {
+                         dialogInterface.cancel();
+                     }
+                 }).show();
+
+
     }
 }

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.propiedades.Propiedad">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvDomicilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Domicilio:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etDomicilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDomicilio"
+        android:enabled="false"
+        android:hint="calle, altura"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/tvAmbientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambientes:"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etAmbientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAmbientes"
+        android:hint="Ambientes"
+        android:enabled="false"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmbientes" />
+
+    <TextView
+        android:id="@+id/tvTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo:"
+        android:textSize="20sp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:entries="@array/tipo"/>
+
+    <TextView
+        android:id="@+id/tvUso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uso"
+        android:textSize="20sp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:entries="@array/uso"/>
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio:"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrecio"
+        android:hint="Precio"
+        android:enabled="false"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tvDisponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponible"
+        android:textSize="20sp"
+        />
+
+    <CheckBox
+        android:id="@+id/chDisponible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disponible" />
+
+    <Button
+        android:id="@+id/btEditarPropiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="editar"
+       />
+
+
+</LinearLayout>

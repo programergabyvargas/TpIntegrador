@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="tipo">
+         <item>Casa</item>
+         <item>Departamento</item>
+         <item>Chalet</item>
+     </string-array>
+
+    <string-array name="uso">
+        <item>Comercial</item>
+        <item>Particular</item>
+        <item>Deposito</item>
+    </string-array>
+
+    <string-array name="propiedades">
+        <item>Propiedad1</item>
+        <item>Propiedad2</item>
+        <item>Propiedad3</item>
+    </string-array>
+</resources>

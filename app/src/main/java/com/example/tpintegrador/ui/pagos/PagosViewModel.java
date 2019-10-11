@@ -10,7 +10,7 @@ public class PagosViewModel extends ViewModel {
 
     public PagosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Pagos fragment");
+    //    mText.setValue("This is Pagos fragment");
     }
 
     public LiveData<String> getText() {
