@@ -104,7 +104,10 @@
         android:id="@+id/chDisponible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Disponible" />
+        android:text="Disponible"
+        android:enabled="false"
+
+        />
 
     <Button
         android:id="@+id/btEditarPropiedad"
@@ -112,6 +115,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="editar"
+
+
        />
 
 

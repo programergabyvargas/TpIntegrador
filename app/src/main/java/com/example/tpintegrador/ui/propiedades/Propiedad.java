@@ -1,11 +1,13 @@
 package com.example.tpintegrador.ui.propiedades;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,9 +64,9 @@ public class Propiedad extends Fragment {
         return fragment;
     }
 
- /*   public void editarpropiedad(View view) {
-      Toast.makeText(getContext(),"Estoy en editarPropiedad()", Toast.LENGTH_LONG).show();
-    }*/
+    public void editarpropiedad(View view) {
+        Log.d("editarpropiedad","ok");
+    }
 
 
     @Override
@@ -76,26 +78,34 @@ public class Propiedad extends Fragment {
 
         }
 
+
     }
 
+    @SuppressLint("WrongViewCast")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_propiedad, container, false);
-        checkBox = root.findViewById(R.id.chDisponible);
+        checkBox =   root.findViewById(R.id.chDisponible);
+        Button bt =(Button) root.findViewById(R.id.btEditarPropiedad);
 
+       // checkBox.setEnabled(true);
+        Log.d("Propiedad->onCreateWiew","ok");
         btEditar = (Button) root.findViewById(R.id.btEditarPropiedad);
 
-        btEditar.setOnClickListener(new View.OnClickListener() {
+       btEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              checkBox.setClickable(true);
+                Log.d("editarpropiedad-Propie","ok");
+                 checkBox.setEnabled(true);
+                 checkBox.setChecked(!checkBox.isChecked());
+                 checkBox.requestFocus();
 
             }
         });
 
-        return inflater.inflate(R.layout.fragment_propiedad, container, false);
+        return root;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

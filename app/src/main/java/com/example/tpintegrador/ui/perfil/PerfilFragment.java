@@ -48,17 +48,7 @@ public class PerfilFragment extends Fragment {
                                     });
 
                     // btEditar = root.findViewById(R.id.btEditar);
-        final TextView textView = root.findViewById(R.id.tvNroDoc);
-        perfilViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
 
-
-
-            }
-        });
-       // editar();
         return root;
     }
 

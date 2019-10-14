@@ -2,10 +2,13 @@ package com.example.tpintegrador.ui.propiedades;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -30,6 +33,8 @@ public class PropiedadesFragment extends Fragment implements Propiedad.OnFragmen
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
+    private Button btEditar;
+    private CheckBox chDisponible;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,9 +51,16 @@ public class PropiedadesFragment extends Fragment implements Propiedad.OnFragmen
         vpa.addFragment(new Propiedad(),"Propiedad 1");
         vpa.addFragment(new Propiedad(),"Propiedad 2");
         vpa.addFragment(new Propiedad(),"Propiedad 3");
-
         viewPager.setAdapter(vpa);
         tabLayout.setupWithViewPager(viewPager);
+
+   /*   btEditar = (Button) root.findViewById(R.id.btEditarPropiedad); //btEditarPropiedad
+        btEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                editarpropiedad(view);
+            }
+        });*/
 
 
 //--------------
@@ -92,8 +104,8 @@ public class PropiedadesFragment extends Fragment implements Propiedad.OnFragmen
 
     }
 
-   /* public void editarpropiedad(View view) {
-
-        Toast.makeText(getContext(),"Estoy en editarPropiedad()", Toast.LENGTH_LONG).show();
-    }*/
+   public void editarpropiedad(View view) {
+        Log.d("editarpropiedad PF","ok");
+        //Toast.makeText(getContext(),"Estoy class PropiedadesFragment, en editarpropiedad()", Toast.LENGTH_LONG).show();
+    }
 }

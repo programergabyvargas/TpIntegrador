@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Spinner
-        android:id="@+id/contratopropiedades"
+        android:id="@+id/spinner_propiedades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

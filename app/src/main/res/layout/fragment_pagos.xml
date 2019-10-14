@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <Spinner
-        android:id="@+id/pagospropiedades"
+        android:id="@+id/spinner_propiedades"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

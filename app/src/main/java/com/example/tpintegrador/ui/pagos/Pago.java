@@ -6,12 +6,22 @@ public class Pago {
     private int nroPago;
     private String fecha;
     private double importe;
+    private String propiedad;
 
 
-    public Pago(int nroPago, String fecha, double importe) {
+    public String getPropiedad() {
+        return propiedad;
+    }
+
+    public void setPropiedad(String propiedad) {
+        this.propiedad = propiedad;
+    }
+
+    public Pago(int nroPago, String fecha, double importe, String propiedad) {
         this.nroPago = nroPago;
         this.fecha = fecha;
         this.importe = importe;
+        this.propiedad = propiedad;
     }
 
     public int getNroPago() {
@@ -36,5 +46,15 @@ public class Pago {
 
     public void setImporte(double importe) {
         this.importe = importe;
+    }
+
+    public boolean equals (Object o){
+      if (o != null && o instanceof Pago){
+          Pago pago = (Pago) o;
+          if(pago.getNroPago() == nroPago){
+              return true;
+          }
+      }
+      return false;
     }
 }
